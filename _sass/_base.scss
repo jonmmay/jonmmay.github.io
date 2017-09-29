@@ -1,12 +1,12 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
+/*body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
-}
+}*/
 
 
 
@@ -14,6 +14,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
+    padding-top: 70px; 
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
@@ -30,13 +31,20 @@ body {
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
+/*h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
+}*/
+
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
 }
 
+p, .highlight {
+    margin: $spacing-unit 0;
+}
 
 
 /**
@@ -52,22 +60,22 @@ img {
 /**
  * Figures
  */
-figure > img {
+/*figure > img {
     display: block;
 }
 
 figcaption {
     font-size: $small-font-size;
-}
+}*/
 
 
 
 /**
  * Lists
  */
-ul, ol {
+/*ul, ol {
     margin-left: $spacing-unit;
-}
+}*/
 
 li {
     > ul,
@@ -109,7 +117,7 @@ a {
 /**
  * Blockquotes
  */
-blockquote {
+/*blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
@@ -120,7 +128,7 @@ blockquote {
     > :last-child {
         margin-bottom: 0;
     }
-}
+}*/
 
 
 
@@ -155,7 +163,7 @@ pre {
 /**
  * Wrapper
  */
-.wrapper {
+/*.wrapper {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
     margin-right: auto;
@@ -170,6 +178,13 @@ pre {
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
+}*/
+
+/* Customize container */
+@media (min-width: 48em) {
+  .container {
+    max-width: 46rem;
+  }
 }
 
 
@@ -177,14 +192,14 @@ pre {
 /**
  * Clearfix
  */
-%clearfix {
+/*%clearfix {
 
     &:after {
         content: "";
         display: table;
         clear: both;
     }
-}
+}*/
 
 
 
@@ -192,15 +207,21 @@ pre {
  * Icons
  */
 .icon {
-
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 20px;
+        height: 20px;
         vertical-align: middle;
 
         path {
             fill: $grey-color;
         }
     }
+}
+.icon:hover {
+    > svg {
+        path {
+            fill: $brand-color;
+        }
+    }        
 }
