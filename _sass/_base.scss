@@ -8,13 +8,11 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }*/
 
-
-
 /**
  * Basic styling
  */
 body {
-    padding-top: 70px; 
+    padding-top: 70px;
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
@@ -44,6 +42,10 @@ ul, ol, dl, figure,
 
 p, .highlight {
     margin: $spacing-unit 0;
+}
+
+p:first-child {
+    margin-top: 0;
 }
 
 
@@ -93,6 +95,26 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
 
+h1 {
+    @include media-query($on-mobile) {
+        font-size: 28px;
+    }
+}
+h2 {
+    @include media-query($on-mobile) {
+        font-size: 24px;
+    }
+}
+h3 {
+    @include media-query($on-mobile) {
+        font-size: 20px;
+    }
+}
+h4, h5 {
+    @include media-query($on-mobile) {
+        font-size: $base-font-size;
+    }
+}
 
 
 /**
@@ -141,6 +163,10 @@ code {
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: #eef;
+
+    @include media-query($on-mobile) {
+        font-size: 12px;
+    }
 }
 
 code {
@@ -209,8 +235,8 @@ pre {
 .icon {
     > svg {
         display: inline-block;
-        width: 20px;
-        height: 20px;
+        width: 24px;
+        height: 24px;
         vertical-align: middle;
 
         path {
@@ -223,5 +249,19 @@ pre {
         path {
             fill: $brand-color;
         }
-    }        
+    }
+}
+.icon-linkedin:hover {
+    > svg {
+        path {
+            fill: #0077b5;
+        }
+    }
+}
+.icon-github:hover {
+    > svg {
+        path {
+            fill: #000;
+        }
+    }
 }

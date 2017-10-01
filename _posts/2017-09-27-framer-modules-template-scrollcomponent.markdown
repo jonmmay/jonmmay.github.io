@@ -7,20 +7,18 @@ categories: framer
 
 Framer is an incredibly flexible software prototyping tool fundamentally built upon a JavaScript library, framer.js. While you don’t need to be proficient in JS or HTML/CSS, it certainly helps and is what sets Framer apart from other popular prototyping tools on the market. (Framer uses [CoffeeScript](http://coffeescript.org/) which is a simpler, clean language built upon JavaScript).
 
-As a product manager, and someone who dabbles in JS, I’ve been eyeballing Framer and yearning for an opportunity to kick the tires. I’ve not been disappointed. 
+As a product manager, and someone who dabbles in JS, I’ve been eyeballing Framer and yearning for an opportunity to kick the tires. I’ve not been disappointed.
 
 It’s no surprise that many of my early prototypes aren’t exactly useful and look a lot like other prototypes on the web. I started simply by exploring what others have created to understand what can and can’t be done (easily.)
 
 My favorite prototype so far :)
 
 ![Sticky headers!](https://github.com/jonmmay/Framer-experiments/blob/master/sticky-header.framer/sticky-header.gif?raw=true)
+*[Check out the prototype](https://framer.cloud/OUTsL/ "It's so fun!")*
 
-<p class='caption' markdown='1'>
-[Check out the prototype](https://framer.cloud/OUTsL/ "It's so fun!")
-</p>
 It’s in this exploration, and increased understanding of the tool, that I’ve come to create my own modules. My very first module was designed to extend Layers to support common iOS touch triggers like “touchUpInside” and “touchDown”. I have to dig this up again and verify it behaves as expected but what I’d like to focus on here is my latest module.
 
-I designed this module to iterate over a list (or array) of data and quickly stamp out templated layers within a ScrollComponent. 
+I designed this module to iterate over a list (or array) of data and quickly stamp out templated layers within a ScrollComponent.
 
 If you primarily rely upon Sketch to mockup your designs, it’s likely you already have a solution in InVision’s Craft plugin. And you probably also know that what you export from Sketch is a static image; great for quick prototypes but limiting if you want to create high fidelity prototypes leveraging dynamic data.
 
@@ -101,7 +99,7 @@ Now a bonus for TextLayers within the template layer!
 scroll.forItemAtIndex = ( index, layer ) ->
     # Copy Template_cell layer
     cell = layer.copy()
-    TemplateScrollComponent.applyTemplate cell, data[ index ], dataFormatter    
+    TemplateScrollComponent.applyTemplate cell, data[ index ], dataFormatter
     return cell
 ```
 

@@ -2,15 +2,12 @@
 layout: page
 title: About
 permalink: /about/
-published: false
+published: true
+hideTitle: true
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+![Jon May]({{ site.url }}/assets/about.png){: .about}
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+Not sure what should be said here so here's a placeholder:
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+I’m a Product Manager with 5+ years of experience in software development creating B2B apps on iOS, Android, and Windows. I have experience defining and measuring product KPIs, executing teams against a product roadmap, and conducting user research. I believe success is achieved through a deep understanding of your product’s customer and making decisions informed by direct user feedback.
