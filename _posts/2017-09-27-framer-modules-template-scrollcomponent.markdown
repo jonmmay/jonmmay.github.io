@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Framer Modules - TemplateScrollComponent"
+title:  "Framer modules - TemplateScrollComponent"
 date:   2017-09-27
-categories: framer
+categories: Framer
 ---
 
 Framer is an incredibly flexible software prototyping tool fundamentally built upon a JavaScript library, framer.js. While you don’t need to be proficient in JS or HTML/CSS, it certainly helps and is what sets Framer apart from other popular prototyping tools on the market. (Framer uses [CoffeeScript](http://coffeescript.org/) which is a simpler, clean language built upon JavaScript).
